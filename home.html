@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Combination & Permutation Calculator</title>
+  <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+
+  <h1>Combination & Permutation Calculator</h1>
+  <div class="calculator">
+    <img src="D:\4-sem\IWT\Screenshot 2025-07-04 080217.png" alt="Calculator Image" class="calculator-image">
+    <img src="D:\4-sem\IWT\Permutations.png" alt="Calculator Image" class="calculator-image">
+    <label for="n">Enter n:</label>
+    <input type="number" id="n" min="0">
+
+    <label for="r">Enter r:</label>
+    <input type="number" id="r" min="0">
+
+    <div class="radio-group">
+      <label><input type="radio" name="type" value="nCr" checked> Combination (nCr)</label>
+      <label><input type="radio" name="type" value="nPr"> Permutation (nPr)</label>
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="home.js"></script>
+</body>
+</html>
